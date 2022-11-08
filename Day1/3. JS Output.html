@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바 스크립트 출력하기</title>
+</head>
+<body>
+    <h1>My First Web Page</h1>
+<p>HTML 요소를 찾아서 출력하기</p>
+
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+<!-- HTML 요소를 찾아서 출력하기 -->
+
+<p>HTML 화면 빈공간에 출력하기</p>
+
+<script>
+document.write(5 + 6);
+</script>
+<!-- HTML 화면 빈공간에 출력하기 -->
+
+<p>버튼 클릭시 출력하기 </p>
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+<!-- HTML 버튼클릭시 해당값 덮어쓰기 = write를 쓸때 주의할점은 html화면의 내용을 덮어쓴다는것이다. 
+    즉 기존 문자들이 덮어져서 안보임  -->
+
+    
+<script>
+ alert(5 + 6);
+</script>
+<!-- HTML 화면에 경고창 띄우기-->
+
+</body>
+</html>
